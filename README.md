@@ -15,3 +15,19 @@ Please note, that all migrated bans will be set as **PERMANENT**.
 10. Copy second INSERT (from INSERT till the end of it, marked with ";"). 
 11. Paste into SQL query and execute.
 12. Voila.
+
+## Example INSERTs
+
+``INSERT INTO `Punishements`(`name`, `uuid`, `reason`, `operator`, `punishmentType`, `start`, `end`, `calculation`) VALUES
+('iiGarnek','b9d521b5-3e7a-3991-bb87-61bc3196a900','Example reason','Console','BAN',1615539623000,-1,''),
+('Flash','5cad87bf-d0a6-39e8-9045-9943627da103','Example reason','Console','BAN',1616959879000,-1,''),
+('bartix','75d6d188-500a-3ba1-9690-67cb787cd1d5','Example reason','Console','BAN',1611143945000,-1,''),
+('37.47.203.133','37.47.203.133','Example reason','Console','IP_BAN',1616846913000,-1,''),
+('91.246.66.148','91.246.66.148','The Ban Hammer has spoken!','Console','IP_BAN',1606671484000,-1,'');``
+
+``INSERT INTO `PunishmentHistory`(`name`, `uuid`, `reason`, `operator`, `punishmentType`, `start`, `end`, `calculation`) VALUES
+('iiGarnek','b9d521b5-3e7a-3991-bb87-61bc3196a900','Example reason','Console','BAN',1615539623000,-1,''),
+('Flash','5cad87bf-d0a6-39e8-9045-9943627da103','Example reason','Console','BAN',1616959879000,-1,''),
+('bartix','75d6d188-500a-3ba1-9690-67cb787cd1d5','Example reason','Console','BAN',1611143945000,-1,''),
+('37.47.203.133','37.47.203.133','Example reason','Console','IP_BAN',1616846913000,-1,''),
+('91.246.66.148','91.246.66.148','The Ban Hammer has spoken!','Console','IP_BAN',1606671484000,-1,'');``
